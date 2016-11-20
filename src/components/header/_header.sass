@@ -1,0 +1,53 @@
+$height: 48px
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+.header
+  width: 100%
+  height: $height
+  background: white
+  position: fixed
+  padding: 0 2rem
+  box-shadow: 0 4px 16px rgba(black, 0.2)
+  z-index: 999
+
+.header .section
+  display: flex
+  align-items: center
+
+.header a
+  display: block
+  text-decoration: none
+  padding: 0 1rem
+  line-height: $height
+  color: darkgray
+  &:hover
+    color: rgb(250, 62, 4)
+
+.header button
+  border: none
+  background: orangered
+  color: white
+  padding: 0.5rem 1.25rem
+  border-radius: 4px
+  font-family: "Open Sans", sans-serif
+  &:hover
+    cursor: pointer
+    background: lighten(orangered, 10%)
+  &:active
+    -webkit-transform: translateY(1px)
+    -moz-transform: translateY(1px)
+    transform: translateY(1px)
+  &:focus
+    outline: 0
+
+.header .small
+  font-weight: bold
+  font-size: 0.75rem
+  text-transform: uppercase
+
+#app
+  margin-top: $height

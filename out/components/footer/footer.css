@@ -1,0 +1,24 @@
+.footer {
+  width: 100%;
+  height: 56px;
+}
+
+.footer .section {
+  display: flex;
+  align-items: center;
+}
+
+.footer a {
+  display: block;
+  text-decoration: none;
+  padding: 0 1rem;
+  color: orangered;
+}
+
+.footer a:hover {
+  color: #cc3700;
+}
+
+.footer p {
+  color: orangered;
+}

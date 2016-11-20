@@ -1,0 +1,15 @@
+script#song(type="x/template")
+  .song
+    .image
+      img(v-bind:href="image")
+    .title
+      h3 {{ title }}
+    .author
+      p {{ author }}
+    .options
+      .play
+        a(v-on:click="togglePlay()")
+          i.material-icons {{ play }}
+      .fav
+        a(v-on:click="toggleFav()" v-bind:class="fav ? active : ''")
+          i.material-icons favorite

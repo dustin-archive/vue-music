@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Songs
+    link(type="text/css" rel="stylesheet" href="index.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans")
+    link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Material+Icons')
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1")
+    include components/song/song.pug
+  body
+    include components/header/header.pug
+    #app
+      script#song(type="x/template")
+      script#song(type="x/template")
+      script#song(type="x/template")
+      script#song(type="x/template")
+      script#song(type="x/template")
+    include components/footer/footer.pug
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.js")
+    script(src="index.js")

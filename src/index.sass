@@ -1,0 +1,39 @@
+@import "components/header/header"
+@import "components/footer/footer"
+@import "components/song/song"
+@import "components/app"
+
+html, body
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+
+body
+  background: whitesmoke
+  color: darken(dimgray, 15%)
+  font-family: "Open Sans", sans-serif
+
+.max
+  display: flex
+  justify-content: space-between
+  max-width: 1240px
+  margin: 0 auto
+
+.fixed
+  position: fixed
+
+hr
+  width: 15%
+  margin-top: 15px
+  margin-bottom: 15px
+
+::-webkit-scrollbar
+  width: 8px
+  height: 8px
+
+::-webkit-scrollbar-track
+  background: rgba(black, 0.1)
+
+::-webkit-scrollbar-thumb
+  background: rgba(black, 0.1)
+  border-radius: 8px

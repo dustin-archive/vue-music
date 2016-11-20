@@ -1,0 +1,16 @@
+
+<script id="song" type="x/template">
+  <div class="song">
+    <div class="image"><img v-bind:href="image"/></div>
+    <div class="title">
+      <h3>{{ title }}</h3>
+    </div>
+    <div class="author">
+      <p>{{ author }}</p>
+    </div>
+    <div class="options">
+      <div class="play"><a v-on:click="togglePlay()"><i class="material-icons">{{ play }}</i></a></div>
+      <div class="fav"><a v-on:click="toggleFav()" v-bind:class="fav ? active : ''"><i class="material-icons">favorite</i></a></div>
+    </div>
+  </div>
+</script>

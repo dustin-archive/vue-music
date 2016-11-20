@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 48px;
+  background: white;
+  position: fixed;
+  padding: 0 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.header .section {
+  display: flex;
+  align-items: center;
+}
+
+.header a {
+  display: block;
+  text-decoration: none;
+  padding: 0 1rem;
+  line-height: 48px;
+  color: darkgray;
+}
+
+.header a:hover {
+  color: #fa3e04;
+}
+
+.header button {
+  border: none;
+  background: orangered;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header button:hover {
+  cursor: pointer;
+  background: #ff6a33;
+}
+
+.header button:active {
+  -webkit-transform: translateY(1px);
+  -moz-transform: translateY(1px);
+  transform: translateY(1px);
+}
+
+.header button:focus {
+  outline: 0;
+}
+
+.header .small {
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+#app {
+  margin-top: 48px;
+}
+
+.footer {
+  width: 100%;
+  height: 72px;
+  background: whitesmoke;
+}
+
+.footer .section {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.footer .nav {
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+
+.footer a {
+  display: block;
+  text-decoration: none;
+  padding: 0 1rem;
+  color: orangered;
+}
+
+.footer a:hover {
+  color: #cc3700;
+}
+
+.footer p {
+  color: orangered;
+}
+
+.song {
+  width: 100%;
+  max-width: calc(1240px / 5 - 40px);
+  height: 250px;
+  background: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.song .image {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.song .image img {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.song .author {
+  font-size: 0.9rem;
+  padding-bottom: 8px;
+}
+
+.song .options {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+}
+
+.song .fav {
+  padding-left: 10px;
+}
+
+.song .fav .active {
+  color: orangered;
+}
+
+#app {
+  width: 100%;
+  max-width: 1240px;
+  height: auto;
+  background: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background: whitesmoke;
+  color: #434343;
+  font-family: "Open Sans", sans-serif;
+}
+
+.max {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.fixed {
+  position: fixed;
+}
+
+hr {
+  width: 15%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
