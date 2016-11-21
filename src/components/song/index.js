@@ -1,15 +1,15 @@
 var images = [ 'temp.jpg' ]
-var titles = [ 'Song Title' ]
-var authors = [ 'Author' ]
+var titles = [ 'Song Title', 'Song Title 2', 'Song Title 3' ]
+var authors = [ 'Author', 'Author 2', 'Author 3' ]
 
 module.exports = {
   template: '#song',
   // props: ['image', 'title', 'author', 'play', 'fav'],
   data: function() {
     return {
-      image: 'temp.jpg',
-      title: 'Song Title',
-      author: 'Author',
+      image: '',
+      title: '',
+      author: '',
       index: 0,
       play: false,
       fav: false
@@ -17,7 +17,7 @@ module.exports = {
   },
   computed: {
     index: function() {
-      return this.index = 0
+      return this.index = Math.floor(Math.random() * titles.length)
     },
     image: function() {
       return this.image = images[this.index]
@@ -31,7 +31,7 @@ module.exports = {
   },
   methods: {
     togglePlay: function() {
-      return this.play = !this.play ? 'pause' : 'play_arrow'
+      return this.play = !this.play
     },
     toggleFav: function() {
       return this.fav = !this.fav

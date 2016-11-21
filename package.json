@@ -4,11 +4,11 @@
   "description": "A music list using vue.",
   "main": "index.js",
   "scripts": {
-    "pug": "pug -P src/index.pug -o out/",
-    "sass": "node-sass src/index.sass -o out/ --output-style expanded",
-    "watchify": "watchify src/index.js -o out/index.js",
-    "build": "npm run pug; npm run sass",
-    "start": "browser-sync start --no-notify --no-ui --server --serveStatic out --files 'out/*.+(html|css)' --port 3000",
+    "pug": "pug -P src/index.pug -o dist/",
+    "sass": "node-sass src/index.sass -o dist/ --output-style expanded",
+    "browser": "browserify src/index.js -o dist/index.js",
+    "build": "npm run pug; npm run sass; npm run browser",
+    "start": "browser-sync start --no-notify --no-ui --server --serveStatic out --files 'dist/*.+(html|css)' --port 3000",
     "test": "npm run build; npm run start"
   },
   "author": "Preston Kyles",
@@ -20,7 +20,6 @@
     "pug": "^2.0.0-beta6",
     "pug-cli": "^1.0.0-alpha6",
     "vue": "^2.0.7",
-    "vue-router": "^2.0.3",
-    "watchify": "^3.7.0"
+    "vue-router": "^2.0.3"
   }
 }
