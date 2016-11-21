@@ -31,7 +31,7 @@ module.exports = {
   },
   methods: {
     togglePlay: function() {
-      return this.play = !this.play ? 'pause' : 'play_arrow'
+      return this.play = !this.play
     },
     toggleFav: function() {
       return this.fav = !this.fav
