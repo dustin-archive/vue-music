@@ -4,8 +4,8 @@
   "description": "A music list using vue.",
   "main": "index.js",
   "scripts": {
-    "pug": "pug -P src/ -o out/",
-    "sass": "node-sass src/ -o out/ --output-style expanded",
+    "pug": "pug -P src/index.pug -o out/",
+    "sass": "node-sass src/index.sass -o out/ --output-style expanded",
     "watchify": "watchify src/index.js -o out/index.js",
     "build": "npm run pug; npm run sass",
     "start": "browser-sync start --no-notify --no-ui --server --serveStatic out --files 'out/*.+(html|css)' --port 3000",
