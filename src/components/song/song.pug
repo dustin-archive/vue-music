@@ -11,5 +11,5 @@ script#song(type="x/template")
         a(v-on:click="togglePlay()")
           i.material-icons {{ play }}
       .fav
-        a(v-on:click="toggleFav()" v-bind:class="fav ? active : ''")
+        a(v-on:click="toggleFav()" v-bind:class="fav && 'active'")
           i.material-icons favorite
