@@ -8,11 +8,7 @@ script#song(type="x/template")
       p {{ author }}
     .options
       .play
-<<<<<<< HEAD
         button(v-on:click="togglePlay()")
-=======
-        a(v-on:click="togglePlay()")
->>>>>>> ea6878dc01f941b86a98b5d1ff56b9ddc6a939f8
           i.material-icons {{ play ? 'pause': 'play_arrow' }}
       .fav
         button(v-on:click="toggleFav()" v-bind:class="fav && 'active'")
