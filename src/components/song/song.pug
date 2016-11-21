@@ -9,7 +9,7 @@ script#song(type="x/template")
     .options
       .play
         a(v-on:click="togglePlay()")
-          i.material-icons {{ play }}
+          i.material-icons {{ play ? 'pause': 'play_arrow' }}
       .fav
         a(v-on:click="toggleFav()" v-bind:class="fav && 'active'")
           i.material-icons favorite
