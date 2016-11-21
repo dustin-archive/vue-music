@@ -1,6 +1,6 @@
 new Vue({
   el: '#app',
   components: {
-    'song': require('./components/song/song')
+    'song': require('./components/song')
   }
 })
