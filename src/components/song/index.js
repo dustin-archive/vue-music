@@ -4,7 +4,7 @@ var authors = [ 'Author' ]
 
 module.exports = {
   template: '#song',
-  props: ['image', 'title', 'author', 'play', 'fav'],
+  // props: ['image', 'title', 'author', 'play', 'fav'],
   data: function() {
     return {
       image: 'temp.jpg',
