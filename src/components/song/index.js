@@ -3,7 +3,7 @@ var titles = [ 'Song Title' ]
 var authors = [ 'Author' ]
 
 module.exports = {
-  template: '.song',
+  template: '#song',
   props: ['image', 'title', 'author', 'play', 'fav'],
   data: function() {
     return {
